@@ -9,6 +9,7 @@ public class GetUserInput {
         double height;
         float salary;
         String name;
+        char employmentType;
         //declare the scanner object
         Scanner input = new Scanner(System.in);
 
@@ -21,6 +22,8 @@ public class GetUserInput {
         height = input.nextDouble();
         System.out.print("Please enter salary:  ");
         salary = input.nextFloat();
+        System.out.print("Employment Type (C, F or P): ");
+        employmentType = input.next().charAt(0);
 
         //3. Use / Consume
         System.out.println("=========OUTPUT=============");
@@ -28,5 +31,6 @@ public class GetUserInput {
         System.out.println("Age: " + intAge);
         System.out.println("Height: " + height);
         System.out.println("Salary: " + salary);
+        System.out.println("Employment Type: " + employmentType);
     }
 }
