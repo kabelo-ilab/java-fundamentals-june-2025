@@ -24,9 +24,13 @@ public class WhileLoopExercise {
             number = input.nextInt();//0
         }//1 2 5
 
-        average = sum / count;
+        if (count > 0){
+            average = sum / count;
+            System.out.println("Sum: " + sum + "\nAverage: " + average);
+        }else{
+            System.out.println("No numbers were entered");
+        }
 
-        System.out.println("Sum: " + sum + "\nAverage: " + average);
 
     }
 }
