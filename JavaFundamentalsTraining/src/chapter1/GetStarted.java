@@ -1,10 +1,14 @@
 package chapter1;
 //single-line comment
 
+import chapter4.VoidMethods;
+
 /*This is the class to get us
 * started with variables */
 public class GetStarted {
     public static void main(String[] args) {
+        VoidMethods.displayMessage();
+
         //1. Declaration - define variables that are needed
         int intAge;
         double height;
