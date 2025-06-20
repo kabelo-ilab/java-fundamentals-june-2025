@@ -1,5 +1,7 @@
 package chapter3.exercises;
 
+import chapter4.ParameterizedMethods;
+
 import java.util.Scanner;
 
 /*The program should prompt the user for 2 integers and
@@ -29,6 +31,7 @@ public class MyCalculator {
                 operator = input.next();
 
             }while(!(operator.equals("+") || operator.equals("-") || operator.equals("*") || operator.equals("/")));
+
 
             switch (operator){
                 case "+": results = number1 + number2;
